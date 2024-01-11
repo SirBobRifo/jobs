@@ -1,11 +1,11 @@
-name: Two jobs
+name: check
 on: 
   pull_request:
    types: [opened, reopened, synchronize, edited]
 
 jobs:
    job1:
-      name: first job
+      name: check
       runs-on: ubuntu-latest
       steps:
        - uses: Slashgear/action-check-pr-title@v4.3.0
