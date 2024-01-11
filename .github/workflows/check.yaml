@@ -1,0 +1,11 @@
+name: Two jobs
+on: pull_request
+
+jobs:
+   job1:
+      name: first job
+      runs-on: ubuntu-latest
+      steps:
+       - uses: Slashgear/action-check-pr-title@v4.3.0
+         with:
+           regexp: "^ACDEV-/d{4}" # Regex the title should match.
