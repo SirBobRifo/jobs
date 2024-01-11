@@ -1,5 +1,7 @@
 name: Two jobs
-on: pull_request
+on: 
+  pull_request:
+   types: [opened, reopened]
 
 jobs:
    job1:
