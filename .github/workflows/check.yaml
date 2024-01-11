@@ -1,7 +1,7 @@
 name: Two jobs
 on: 
   pull_request:
-   types: [opened, reopened]
+   types: [opened, reopened, synchronize, edited]
 
 jobs:
    job1:
